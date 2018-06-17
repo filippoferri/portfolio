@@ -195,11 +195,13 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .2);
 
     a {
+      display: block;
       font-family: 'Oswald', sans-serif;
       @include font-size(24);
       letter-spacing: 1px;
       color: white;
       text-transform: uppercase;
+      outline: none;
 
       &:hover {
         color: darken(#F64C43, 10%);
