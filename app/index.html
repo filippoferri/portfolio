@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Filippo Ferri - Full Stack Designer and Future Maker</title>
 
-  <!-- Place favicon.ico in the root directory -->
+  <!-- facebook share -->
+  <meta property="og:image" content="http://filippoferri.co/images/facebook-og-image.jpg" />
+  <meta property="og:url" content="http://filippoferri.co/" />
+  <meta property="og:site-name" content="Filippo Ferri - Full Stack Designer" />
+  <meta name="description" content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy." />
+
+  <!-- twitter share -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fiferri">
+  <meta name="twitter:creator" content="@fiferri">
+  <meta name="twitter:title" content="Filippo Ferri - Full Stack Designer">
+  <meta name="twitter:description" content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy.">
+  <meta name="twitter:image:src" content="http://filippoferri.co/images/twitter-src-image.jpg">
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -183,23 +195,16 @@
   </div>
 </div>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58116085-1"></script>
 <script>
-  (function (b, o, i, l, e, r) {
-    b.GoogleAnalyticsObject = l;
-    b[l] || (b[l] =
-      function () {
-        (b[l].q = b[l].q || []).push(arguments)
-      });
-    b[l].l = +new Date;
-    e = o.createElement(i);
-    r = o.getElementsByTagName(i)[0];
-    e.src = 'https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e, r)
-  }(window, document, 'script', 'ga'));
-  ga('create', 'UA-XXXXX-X');
-  ga('send', 'pageview');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-58116085-1');
 </script>
+
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
@@ -213,8 +218,8 @@
 <!-- endbuild -->
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="/bower_components/uikit/dist/js/uikit.min.js"></script>
-<script src="/bower_components/uikit/dist/js/uikit-icons.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
 
 </body>
 </html>
