@@ -117,7 +117,7 @@ $(document).ready(function () {
 
   });
 
-  $(window).resize(function(){location.reload();});
+  //$(window).resize(function(){location.reload();});
 
 });
 
