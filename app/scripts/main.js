@@ -62,8 +62,6 @@ function loadProject(projectID) {
     //moduleDescription += '<p>' + loadModules.description + '</p>';
     //$('.modal-description').html(moduleDescription);
 
-    console.dir(loadModules);
-
     for (var i = 0; i < loadModules.modules.length; i++) {
       if (loadModules.modules[i].sizes.original != undefined) {
         moduleHTML += '<img src="' + loadModules.modules[i].sizes.original + '">';
@@ -116,8 +114,6 @@ $(document).ready(function () {
     ]
 
   });
-
-  //$(window).resize(function(){location.reload();});
 
 });
 
