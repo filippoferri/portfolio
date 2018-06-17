@@ -1,0 +1,18 @@
+// custom variables and variable overwrites.
+@import "utils/variables";
+
+// default variables and available mixins.
+@import "../../bower_components/uikit/src/scss/variables-theme.scss";
+@import "../../bower_components/uikit/src/scss/mixins-theme.scss";
+
+// custom mixin overwrites.
+@import "utils/mixins";
+
+// UIkit.
+@import "../../bower_components/uikit/src/scss/uikit-theme.scss";
+
+// Interface
+@import "modules/base";
+@import "modules/carousel";
+@import "modules/carousel-theme";
+@import "modules/loader";

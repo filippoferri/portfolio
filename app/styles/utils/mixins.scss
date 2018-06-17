@@ -1,0 +1,46 @@
+//
+//
+//
+
+//
+// Typography
+//
+@mixin font-size($sizeValue: 14) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
+//
+// Spacing
+//
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@mixin spacing($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value/10}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}
+
