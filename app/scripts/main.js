@@ -96,10 +96,17 @@ $(document).ready(function () {
 // Carousel
   $('.ff-featured-projects').slick({
 
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     arrows: true,
     responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
       {
         breakpoint: 1199,
         settings: {
