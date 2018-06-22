@@ -7,17 +7,19 @@
   <title>Filippo Ferri - Full Stack Designer and Future Maker</title>
 
   <!-- facebook share -->
-  <meta property="og:image" content="http://filippoferri.co/images/facebook-og-image.jpg" />
-  <meta property="og:url" content="http://filippoferri.co/" />
-  <meta property="og:site-name" content="Filippo Ferri - Full Stack Designer" />
-  <meta name="description" content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy." />
+  <meta property="og:image" content="http://filippoferri.co/images/facebook-og-image.jpg"/>
+  <meta property="og:url" content="http://filippoferri.co/"/>
+  <meta property="og:site-name" content="Filippo Ferri - Full Stack Designer"/>
+  <meta name="description"
+        content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy."/>
 
   <!-- twitter share -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@fiferri">
   <meta name="twitter:creator" content="@fiferri">
   <meta name="twitter:title" content="Filippo Ferri - Full Stack Designer">
-  <meta name="twitter:description" content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy.">
+  <meta name="twitter:description"
+        content="Hello! My name is Filippo Ferri, I'm a Full Stack Designer actually based in Italy.">
   <meta name="twitter:image:src" content="http://filippoferri.co/images/twitter-src-image.jpg">
 
   <!-- build:css styles/vendor.css -->
@@ -62,17 +64,44 @@
 <main>
 
   <!-- Intro -->
-  <section id="home" class="main uk-height-viewport">
-    <div class="uk-position-center">
-      <div class="main-title uk-animation-slide-bottom-small">
-        <h1>Filippo Ferri</h1>
-        <h2>Full Stack Designer and Future Maker</h2>
+  <div id="home" class="main white">
+    <div class="intro">
+      <!-- 1 -->
+      <div class="uk-height-viewport lounge ">
+        <div class="uk-position-center">
+          <div class="main-title ">
+            <h1 class="uk-animation-slide-bottom-small">UX Designer</h1>
 
-        <a href="#projects" uk-scroll>Featured Projects</a>
+            <a href="#projects" uk-scroll>Featured Projects</a>
 
+          </div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="uk-height-viewport sky ">
+        <div class="uk-position-center">
+          <div class="main-title">
+            <h1 class="uk-animation-slide-bottom-small">Visual Designer</h1>
+
+            <a href="#projects" uk-scroll>Featured Projects</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="uk-height-viewport glass ">
+        <div class="uk-position-center">
+          <div class="main-title">
+            <h1 class="uk-animation-slide-bottom-small">UI Developer</h1>
+
+            <a href="#projects" uk-scroll>Featured Projects</a>
+
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- About -->
   <section id="about" class="main stripes uk-height-viewport">
@@ -83,10 +112,10 @@
           <div class="uk-width-1-6 uk-visible@m"></div>
           <div class="uk-width-1-1 uk-width-2-3@m">
             <div uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
-            <h3>About Me</h3>
-            <p>I'm a Full Stack Designer specialized in three big areas of the web: <b>Interaction Design</b>, <b>Visual
-              Design</b> and <b>UI Development</b>. My goal is to find a magical touch in all my projects for greatest
-              customer satisfaction.</p></div>
+              <h3>About Me</h3>
+              <p>I'm a Full Stack Designer specialized in three big areas of the web: <b class="underline-ibiza">Interaction Design</b>, <b class="underline-sky">Visual
+                Design</b> and <b class="underline-glass">UI Development</b>. My goal is to find a magical touch in all my projects for greatest
+                customer satisfaction.</p></div>
           </div>
           <div class="uk-width-1-6 uk-visible@m"></div>
 
@@ -199,7 +228,11 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58116085-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
   gtag('js', new Date());
 
   gtag('config', 'UA-58116085-1');
@@ -219,7 +252,8 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
 
 </body>
 </html>

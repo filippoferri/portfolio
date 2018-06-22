@@ -54,10 +54,11 @@ a {
 //
 h1 {
   position: relative;
-  @include font-size(50);
+  @include font-size(80);
   font-weight: 300;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
+  color: white;
 
   &:first-child {
     will-change: contents
@@ -112,6 +113,36 @@ h4 {
   background: #EE0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FF6A00, #EE0979); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FF6A00, #EE0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.lounge {
+  background: #FA05D9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DE0120, #FA05D9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DE0120, #FA05D9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.sky {
+  background: #17EAD9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6078EA, #17EAD9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6078EA, #17EAD9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.glass {
+  background: #43E695; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3BB2B8, #43E695); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3BB2B8, #43E695); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.underline-ibiza {
+  border-bottom: 1px solid #EE0979;
+}
+
+.underline-sky {
+  border-bottom: 1px solid #17EAD9;
+}
+
+.underline-glass {
+  border-bottom: 1px solid #3BB2B8;
 }
 
 .stripes {
@@ -224,7 +255,7 @@ main {
 // Frame
 .top-bar {
   display: flex;
-  @include spacing(padding, 0, 40);
+  @include spacing(padding, 0, 15);
   height: 40px;
   position: fixed;
   top: 0;
@@ -235,6 +266,10 @@ main {
   align-items: center;
   background-color: white;
   z-index: 10;
+
+  @media (min-width: $breakpoint-small) {
+    @include spacing(padding, 0, 40);
+  }
 }
 
 .left-bar,
@@ -292,6 +327,7 @@ section {
     padding-left: 85px;
     position: relative;
     transition: .708s ease-out;
+    color: white;
 
     &:before {
       transition: .6s ease-out .108s;
@@ -299,7 +335,8 @@ section {
       display: inline-block;
       width: 72px;
       height: 1px;
-      background-color: #F64C43;
+      //background-color: #F64C43;
+      background-color: white;
       position: absolute;
       top: 50%;
       left: 0;
@@ -311,7 +348,8 @@ section {
       display: inline-block;
       width: 0;
       height: 1px;
-      background-color: #374818;
+      //background-color: #374818;
+      background-color: white;
       position: absolute;
       top: 50%;
       right: 0;
@@ -387,6 +425,12 @@ section {
     }
   }
 
+}
+
+.intro {
+  .slick-slide {
+    padding: 0;
+  }
 }
 
 .ff-mail {

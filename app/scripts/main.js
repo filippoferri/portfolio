@@ -93,7 +93,7 @@ $(document).ready(function () {
   });
 
 
-// Carousel
+  // Carousel
   $('.ff-featured-projects').slick({
 
     slidesToShow: 4,
@@ -120,6 +120,18 @@ $(document).ready(function () {
       }
     ]
 
+  });
+
+  $('.intro').slick({
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 6000,
+    pauseOnHover: false
   });
 
 });
