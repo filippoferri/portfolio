@@ -59,9 +59,14 @@ h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: white;
+  @include spacing(padding, 0,0,0,10);
 
   &:first-child {
     will-change: contents
+  }
+
+  @media (min-width: $breakpoint-small) {
+    padding: 0;
   }
 }
 
