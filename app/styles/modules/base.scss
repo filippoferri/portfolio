@@ -22,6 +22,7 @@ body {
   @include font-size(16);
   letter-spacing: 1px;
   overflow-x: hidden;
+  line-height: 2;
 }
 
 body ::-moz-selection {
@@ -32,6 +33,27 @@ body ::-moz-selection {
 body ::selection {
   color: #000000;
   background: #F64C43
+}
+
+#rideau {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  background: black;
+  animation-name: open;
+  transition: transform 550ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  transform-origin: right 0;
+  transform: scale(1,1);
+
+  &.hidden {
+    transform: scale(0,1);
+  }
 }
 
 .browserupgrade {
@@ -325,6 +347,7 @@ section {
 
 .main-title {
   //max-width: 55%;
+  position: relative;
 
   a {
     display: inline-block;
@@ -371,6 +394,29 @@ section {
         width: 72px;
         transition-delay: .108s;
       }
+    }
+  }
+}
+
+.content {
+  position: relative;
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    z-index: 10;
+    transition: transform 550ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+    transform-origin: right 0;
+    transform: scale(1,1);
+
+    &.hidden {
+      transform: scale(0,1);
     }
   }
 }

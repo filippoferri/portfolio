@@ -43,6 +43,8 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
+<div id="rideau"></div>
+
 <!-- Header -->
 <header class="top-bar">
   <div class="uk-width-1-2 uk-animation-slide-top-small">
@@ -81,6 +83,7 @@
       <div class="uk-height-viewport sky ">
         <div class="uk-position-center">
           <div class="main-title">
+
             <h1 class="uk-animation-slide-bottom-small">Visual Designer</h1>
 
             <a href="#projects" uk-scroll>Featured Projects</a>
@@ -93,6 +96,7 @@
       <div class="uk-height-viewport glass ">
         <div class="uk-position-center">
           <div class="main-title">
+
             <h1 class="uk-animation-slide-bottom-small">UI Developer</h1>
 
             <a href="#projects" uk-scroll>Featured Projects</a>
@@ -111,7 +115,10 @@
         <div class="uk-grid-small" uk-grid>
           <div class="uk-width-1-6 uk-visible@m"></div>
           <div class="uk-width-1-1 uk-width-2-3@m">
-            <div uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
+            <div class="content">
+
+              <div class="overlay" uk-scrollspy="cls:hidden; repeat: true; offset-top: 100"></div>
+
               <h3>About Me</h3>
               <p>I'm a Full Stack Designer specialized in three big areas of the web: <b class="underline-ibiza">Interaction Design</b>, <b class="underline-sky">Visual
                 Design</b> and <b class="underline-glass">UI Development</b>. My goal is to find a magical touch in all my projects for greatest

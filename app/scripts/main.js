@@ -76,6 +76,10 @@ function loadProject(projectID) {
 
 $(document).ready(function () {
 
+  setTimeout(function(){
+    $('#rideau').addClass('hidden');
+  }, 1000);
+
   // Behance
 
 // Set behance api key

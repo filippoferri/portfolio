@@ -18,6 +18,43 @@ $slick-next-character: "\2192" !default;
   padding: 30px;
 }
 
+.ff-featured-projects {
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -55px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    animation-name: arrowCAnim;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+  }
+}
+
+@keyframes arrowCAnim {
+  0% {
+    transform: translate(-150%,-50%)
+  }
+
+  80% {
+    transform: translate(50%,-50%)
+  }
+
+  100% {
+    transform: translate(-150%,-50%)
+  }
+}
+
 /* Arrows */
 
 .slick-prev,
